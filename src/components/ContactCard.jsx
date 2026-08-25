@@ -173,7 +173,7 @@ const ContactCard = () => {
                 </div>
 
             </div>
-
+            
         </section>
     );
 };

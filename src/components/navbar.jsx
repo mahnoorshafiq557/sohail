@@ -47,7 +47,7 @@ const Navbar = () => {
                 {/* Mobile menu toggle */}
                 <button
                     type='button'
-                    className='md:hidden text-[#14213d] p-2 focus:outline-none rounded-lg border border-gray-200 hover:bg-gray-50'
+                    className='md:hidden text-[#14213d] p-2 focus:outline-none rounded border border-gray-200 hover:bg-gray-50'
                     aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                     aria-expanded={isMenuOpen}
                     onClick={() => setIsMenuOpen((open) => !open)}
