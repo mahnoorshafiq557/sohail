@@ -5,6 +5,7 @@ import {
     LuMail,
     LuMapPin,
     LuArrowUpRight,
+    LuPhone,
 } from "react-icons/lu";
 
 const Footer = () => {
@@ -154,14 +155,11 @@ const Footer = () => {
                             </div>
 
                             <a
-                                href="mailto:hello@example.com"
+                                href="tel:+923441744517"
                                 className="flex items-center gap-3 text-sm text-[#aebbd0] transition hover:text-white"
                             >
-                                <LuMail
-                                    size={17}
-                                    className="text-[#7d9cff]"
-                                />
-                                hello@example.com
+                                <LuPhone size={17} className="text-[#7d9cff]" />
+                                +92 344 1744517
                             </a>
 
                             <Link

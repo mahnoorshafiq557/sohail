@@ -44,7 +44,7 @@ const reviews = [
 
 const ClientReviews = () => {
     return (
-        <section className="w-full bg-[#f7f9fe] px-6 py-16 md:px-12 lg:px-16 xl:px-20">
+        <section className="w-full bg-[#f7f9fe] px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-10 md:py-16">
 
             <div className="mx-auto w-full max-w-[1200px]">
 
@@ -57,16 +57,16 @@ const ClientReviews = () => {
                             Client Reviews
                         </p>
 
-                        <h2 className="max-w-md text-3xl font-bold leading-tight text-[#10203e] md:text-4xl">
+                        <h2 className="max-w-md text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-[#10203e]">
                             Trusted by founders
                             <br />
                             & agencies
                         </h2>
 
                         {/* Facebook Source */}
-                        <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-[11px] font-medium text-blue-600">
-                            <LuFacebook size={14} />
-                            Reviews fetched from Facebook - 6.3K Followers Community
+                        <div className="mt-4 inline-flex items-center gap-2 rounded-2xl sm:rounded-full border border-blue-200 bg-blue-50 px-3.5 py-2 text-[11px] font-medium text-blue-600 max-w-full">
+                            <LuFacebook size={14} className="shrink-0" />
+                            <span>Reviews fetched from Facebook - 6.3K Followers Community</span>
                         </div>
                     </div>
 
@@ -171,7 +171,7 @@ const ClientReviews = () => {
 
 
                             {/* REVIEW TEXT */}
-                            <p className="mt-4 min-h-[105px] text-[12px] leading-6 text-[#29415f]">
+                            <p className="mt-4 min-h-0 md:min-h-[105px] text-[12px] leading-6 text-[#29415f]">
                                 "{review.review}"
                             </p>
 
@@ -212,7 +212,7 @@ const ClientReviews = () => {
                 {/* BOTTOM NOTE */}
                 <div className="mt-6 flex justify-center">
 
-                    <div className="rounded-full border border-[#dce3ed] bg-white px-5 py-2.5 text-center text-[10px] text-[#70809a]">
+                    <div className="rounded-2xl sm:rounded-full border border-[#dce3ed] bg-white px-4 sm:px-5 py-2.5 text-center text-[10px] text-[#70809a] max-w-full">
                         Showing Facebook community reviews • Profile photos use
                         Facebook avatars • All images from personal FB profile
                     </div>

@@ -30,8 +30,8 @@ const WhyChooseMe = () => {
     ];
 
     return (
-        <section className="w-full bg-[#f8f9fb] px-6 py-10 md:px-12 lg:px-16 xl:px-20">
-            <div className="mx-auto flex w-full max-w-[1450px] flex-col gap-8 rounded-[24px] bg-[#10203e] p-6 md:p-8 lg:flex-row lg:items-center lg:gap-10 lg:px-8 lg:py-8">
+        <section className="w-full bg-[#f8f9fb] px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-10 md:py-16">
+            <div className="mx-auto flex w-full max-w-[1450px] flex-col gap-8 rounded-[24px] bg-[#10203e] p-6 sm:p-8 lg:flex-row lg:items-center lg:gap-10 lg:px-8 lg:py-8">
 
                 {/* LEFT CONTENT */}
                 <div className="shrink-0 lg:w-[32%]">
@@ -39,7 +39,7 @@ const WhyChooseMe = () => {
                         Why Choose Me
                     </p>
 
-                    <h2 className="max-w-md text-3xl font-bold leading-[1.05] text-white md:text-4xl">
+                    <h2 className="max-w-md text-2xl sm:text-3xl md:text-4xl font-bold leading-[1.1] text-white">
                         Agency quality,
                         <br />
                         freelancer pricing

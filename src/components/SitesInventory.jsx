@@ -82,7 +82,7 @@ const SiteInventory = () => {
     }, [search, selectedNiche]);
 
     return (
-        <section className="w-full bg-[#f8f9fb] px-6 py-16 md:px-12 lg:px-16 xl:px-20">
+        <section className="w-full bg-[#f8f9fb] px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-10 md:py-16">
 
             <div className="mx-auto w-full max-w-[1450px]">
 
@@ -93,7 +93,7 @@ const SiteInventory = () => {
                         Sites Inventory
                     </span>
 
-                    <h2 className="mt-5 text-3xl font-bold tracking-tight text-[#14213d] md:text-4xl lg:text-5xl">
+                    <h2 className="mt-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#14213d]">
                         1000+ Verified Guest Post Sites
                     </h2>
 
@@ -109,8 +109,8 @@ const SiteInventory = () => {
                 <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 
                     {/* Notice */}
-                    <div className="inline-flex w-fit items-center gap-2 rounded-full border border-[#f5c75d] bg-[#fffaf0] px-3 py-2 text-[11px] text-[#8a5a00]">
-                        <LuLockKeyhole size={13} />
+                    <div className="inline-flex w-full sm:w-fit items-center gap-2 rounded-2xl sm:rounded-full border border-[#f5c75d] bg-[#fffaf0] px-3.5 py-2 text-[11px] text-[#8a5a00]">
+                        <LuLockKeyhole size={13} className="shrink-0" />
 
                         <span>
                             Client can add prices from admin panel / Google
@@ -120,10 +120,10 @@ const SiteInventory = () => {
 
 
                     {/* Search + Filter */}
-                    <div className="flex flex-col gap-2 sm:flex-row">
+                    <div className="flex flex-col gap-2 sm:flex-row w-full sm:w-auto">
 
                         {/* Search */}
-                        <div className="relative">
+                        <div className="relative w-full sm:w-auto">
                             <LuSearch
                                 size={16}
                                 className="absolute left-3 top-1/2 -translate-y-1/2 text-[#8b9ab0]"
@@ -143,7 +143,7 @@ const SiteInventory = () => {
                         <select
                             value={selectedNiche}
                             onChange={(e) => setSelectedNiche(e.target.value)}
-                            className="h-10 rounded-full border border-[#dce3eb] bg-white px-4 text-xs text-[#14213d] outline-none focus:border-[#315efb]"
+                            className="h-10 w-full sm:w-auto rounded-full border border-[#dce3eb] bg-white px-4 text-xs text-[#14213d] outline-none focus:border-[#315efb]"
                         >
                             {niches.map((niche) => (
                                 <option key={niche} value={niche}>
@@ -315,12 +315,15 @@ const SiteInventory = () => {
                 {/* CTA */}
                 <div className="mt-4 flex justify-center">
 
-                    <button className="items-center gap-2 rounded-full border border-[#14213d] bg-white px-6 py-3 text-xs font-medium text-[#14213d] transition hover:bg-[#14213d] hover:text-white">
-                        <a href="https://www.facebook.com/muhammad.sohail.71692">
-                            <LuList size={15} />
-                            Get Full 1000+ Sites List on Facebook
-                        </a>
-                    </button>
+                    <a
+                        href="https://www.facebook.com/muhammad.sohail.71692"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-[#14213d] bg-white px-4 sm:px-6 py-3 text-xs font-medium text-[#14213d] text-center transition hover:bg-[#14213d] hover:text-white"
+                    >
+                        <LuList size={15} className="shrink-0" />
+                        <span>Get Full 1000+ Sites List on Facebook</span>
+                    </a>
 
                 </div>
 

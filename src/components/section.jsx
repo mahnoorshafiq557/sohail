@@ -7,22 +7,23 @@ const stats = [
 
 const Section = () => {
     return (
-        <div className='justify-between items-center h-full w-full px-45 bg-[#ffffff] grid grid-cols-4 border border-gray-200'>
-            {stats.map((stat, index) => (
-                <div
-                    key={stat.label}
-                    className={`col-span-1 flex flex-col gap-2 justify-center px-10 py-8 h-full w-full ${index !== 0 ? 'border-l border-gray-200' : ''
-                        }`}
-                >
-                    <h1 className='font-bold text-3xl text-[#14213d]'>{stat.value}</h1>
-                    <p className='text-[#14213d] text-sm font-medium'>
-                        {stat.label}
-                        <br />
-                        <span className='text-gray-400 font-normal'>{stat.sublabel}</span>
-                    </p>
-                </div>
-            ))}
-        </div>
+        <section className='w-full bg-[#ffffff] border-y border-gray-200 py-4 sm:py-6 md:py-8 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20'>
+            <div className='mx-auto w-full max-w-[1450px] grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-gray-200'>
+                {stats.map((stat) => (
+                    <div
+                        key={stat.label}
+                        className='flex flex-col gap-1.5 justify-center px-2 sm:px-6 lg:px-10 py-2 sm:py-4 w-full text-center sm:text-left'
+                    >
+                        <h2 className='font-bold text-2xl sm:text-3xl text-[#14213d]'>{stat.value}</h2>
+                        <p className='text-[#14213d] text-xs sm:text-sm font-medium leading-tight'>
+                            {stat.label}
+                            <br />
+                            <span className='text-gray-400 font-normal text-xs'>{stat.sublabel}</span>
+                        </p>
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }
 

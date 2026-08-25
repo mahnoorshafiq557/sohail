@@ -40,10 +40,9 @@ const AboutCard = () => {
         },
     ];
     return (
-        <section className="w-full px-4 py-8 md:px-8">
-            <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="w-full">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {services.map((service) => (
-               
                     <ServiceCard
                         key={service.title}
                         title={service.title}
@@ -52,7 +51,7 @@ const AboutCard = () => {
                     />
                 ))}
             </div>
-        </section>
+        </div>
     )
 }
 

@@ -3,6 +3,7 @@ import {
     LuLinkedin,
     LuMapPin,
     LuMessageCircle,
+    LuPhone,
 } from "react-icons/lu";
 
 const ContactCard = () => {
@@ -43,13 +44,11 @@ const ContactCard = () => {
                     <div className="mt-7 flex flex-wrap gap-2">
 
                         <a
-                            href="https://www.facebook.com/muhammad.sohail.71692"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="tel:+923441744517"
                             className="inline-flex items-center gap-2 rounded-full bg-[#287cf5] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#176be0]"
                         >
-                            <LuMessageCircle size={15} />
-                            Messenger: Chat Now
+                            <LuPhone size={15} />
+                            +92 344 1744517
                         </a>
 
                         <a

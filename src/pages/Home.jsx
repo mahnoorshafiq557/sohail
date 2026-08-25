@@ -5,7 +5,6 @@ import WhyChooseMe from '../components/WhyChoose'
 import SiteInventory from '../components/SitesInventory'
 import ClientReviews from '../components/ClientReviews'
 import Contact from '../components/ContactCard'
-import Footer from '../components/footer'
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
       <SiteInventory/>
       <ClientReviews/>
       <Contact/>
-      <Footer/>
     </div>
   )
 }
