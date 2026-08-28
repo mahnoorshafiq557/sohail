@@ -48,7 +48,7 @@ const Footer = () => {
 
                             {/* TODO: replace with the real LinkedIn profile URL */}
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/muhammad-sohail-385196251/"
                                 className="flex h-9 w-9 items-center justify-center rounded-full bg-[#213352] text-[#c4d0e2] transition hover:bg-[#287cf5] hover:text-white"
                                 aria-label="LinkedIn"
                             >

@@ -4,7 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 const RightCard = () => {
   return (
     <div className="w-full max-w-[475px] mx-auto">
-       <div className="relative w-full overflow-hidden rounded-2xl bg-[#14213d] px-4 sm:px-5 pt-6 pb-20 font-sans text-white/90 shadow-xl">
+       <div className="relative w-full rounded-2xl bg-[#14213d] px-4 sm:px-5 pt-6 pb-20 font-sans text-white/90 shadow-xl">
                 {/* Profile Header */}
                 <div className="flex items-start gap-3">
                     <img

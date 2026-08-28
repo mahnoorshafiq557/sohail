@@ -45,8 +45,7 @@ const ContactCard = () => {
 
                         <a
                             href="tel:+923441744517"
-                            className="inline-flex items-center gap-2 rounded-full bg-[#287cf5] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#176be0]"
-                        >
+                            className="inline-flex items-center gap-2 rounded-full bg-[#287cf5] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#176be0]">
                             <LuPhone size={15} />
                             +92 344 1744517
                         </a>
@@ -55,17 +54,20 @@ const ContactCard = () => {
                             href="https://www.facebook.com/muhammad.sohail.71692"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 rounded-full bg-[#263753] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#314361]"
-                        >
+                            className="inline-flex items-center gap-2 rounded-full bg-[#263753] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#314361]">
                             <LuFacebook size={15} />
                             Facebook Profile
                         </a>
 
                         {/* TODO: replace with the real LinkedIn profile URL */}
-                        <button className="inline-flex items-center gap-2 rounded-full bg-[#263753] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#314361]">
+                        <a href="https://www.linkedin.com/in/muhammad-sohail-385196251/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 rounded-full bg-[#263753] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#314361]">
                             <LuLinkedin size={15} />
+
                             LinkedIn
-                        </button>
+                        </a>
 
                     </div>
 
@@ -173,7 +175,7 @@ const ContactCard = () => {
                 </div>
 
             </div>
-            
+
         </section>
     );
 };
