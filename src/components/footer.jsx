@@ -56,7 +56,7 @@ const Footer = () => {
                             </a>
 
                             <a
-                                href="mailto:hello@example.com"
+                                href="mailto:sohail.guestpostofficial@gmail.com"
                                 className="flex h-9 w-9 items-center justify-center rounded-full bg-[#213352] text-[#c4d0e2] transition hover:bg-[#287cf5] hover:text-white"
                                 aria-label="Email"
                             >
